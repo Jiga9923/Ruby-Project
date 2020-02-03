@@ -1,0 +1,46 @@
+	
+	<h1>Simple Calculator</h1>
+	<%= form_tag "/sum" do%>
+	
+	<%= text_field_tag :number1 %>
+	<%= text_field_tag :number2 %>
+    <%= submit_tag "+" %> 
+	<!-- <input name="commit" id="sum" type="submit" value="+"/> -->
+
+	<% end %>
+	
+	<hr>
+
+	<%= form_tag "/subtract" do%>
+	
+	<%= text_field_tag :number1 %>
+	<%= text_field_tag :number2 %>
+	<%= submit_tag "-" %>
+	<% end %>
+	
+	<hr>
+
+	<%= form_tag "/multiply" do%>
+	
+	<%= text_field_tag :number1 %>
+	<%= text_field_tag :number2 %>
+	<%= submit_tag "*" %>
+	<% end %>
+	
+	<hr>
+
+	<%= form_tag "/division" do%>
+	
+	<%= text_field_tag :number1 %>
+	<%= text_field_tag :number2 %>
+	<%= submit_tag "/" %>
+	<% end %>
+	
+	<hr>
+	</html>
+
+ 	<script type="text/javascript" charset="UTF-8">
+    $("#sum").click(function() {
+    	alert("Clicked");
+  });
+</script> 
